@@ -1,0 +1,62 @@
+#navbar {
+    background-color:#ffff;
+}
+.nav-holder {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-logo {
+    width:60px;
+    height:0%;
+    padding-bottom:60px;
+    position:relative;
+}
+#logo {
+    position:absolute;
+    top:0;
+    left:0;
+}
+.nav-brand-title {
+    font-size:30px;
+    font-family: 'Architects Daughter', cursive;
+}
+.navbar-brand {
+    display:flex;
+    align-items: center;
+}
+.burger-tint {
+    stroke:#7d9c7c;
+}
+.nav-item {
+    font-weight:500;
+}
+.navbar-toggler:hover .burger-tint, button:focus {
+    stroke:#712370;
+    outline:none;
+}
+.navbar-toggler {
+    border: none !important;
+}
+.active {
+    color:#712370be !important;
+}
+.active:hover {
+    color:#97027ecc !important;
+}
+ul.nav div.dropdown:hover > ul.dropdown-menu, ul.dropdown-menu:hover { 
+    display: block; 
+}
+.dropdown-menu {
+    margin-top:0px;
+}
+.dropdown {
+    cursor:pointer;
+}
+ul.dropdown-menu {
+    border:0;
+}
+.nav-fade {
+    box-shadow: 0 1px 30px #7d9c7ccc;
+}
