@@ -11,9 +11,8 @@ body {
     display:flex;
     align-items:center;
     justify-content: center;
-    height:100vh;
+    height:70vh;
     width:100%;
-    background-color:orange;
 }
 main {
     padding-top:67.7px;
