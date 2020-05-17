@@ -1,0 +1,29 @@
+.big-tree-holder {
+    width:100%;
+    height:80vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position:relative;
+}
+#big-tree, .big-tree-shadow {
+    position: absolute;
+    width:100%;
+    z-index: -1;
+}
+#big-tree {
+    top:0;
+}
+.big-tree-shadow {
+    background-image:linear-gradient(#7d9c7c00, #7d9c7c);
+    height:70%;
+    bottom:0;
+}
+.green-content {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    background-color:#7d9c7c;
+    height:80vh;
+}

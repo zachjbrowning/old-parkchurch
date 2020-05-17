@@ -4,9 +4,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
-.check {
-    background-color:white;
-}
 .filler {
     display:flex;
     align-items:center;
@@ -16,4 +13,49 @@ body {
 }
 main {
     padding-top:67.7px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+main > div {
+    flex-grow:1;
+    flex-basis:100%;
+}
+
+.spin-cycle {
+    fill: #712370;
+    
+}
+#loader-rotate {
+    animation: rotate 3s infinite ease-in-out;
+}
+.loader-icon {
+    display:block;
+    width:100px;
+    height:100px;
+    position:absolute;
+    top:-50px;
+    left:-50px;
+
+}
+.loader-box {
+    position:relative;
+}
+.loader-holder {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:10vh;
+    height:100%;
+
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359.999deg);
+    }
 }
