@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom'
 import NavLogo from './NavLogo'
 import NavItem from './NavItem'
 
@@ -19,14 +20,12 @@ export default class Nav extends Component {
         return (
             <header>
                 <nav id="navbar" className="fixed-top navbar nav-holder navbar-expand-sm navbar-light">
-                    <div className="mr-auto navbar-brand">
-                        <a href="/welcome" className="navbar-brand">
-                            <div className="nav-logo align-bottom d-inline-block">
-                                <NavLogo/>
-                            </div>{' '}
-                            <span className="nav-brand-title">Park Church</span>
-                        </a>
-                    </div>
+                    <Link to="/welcome" className="mr-auto navbar-brand">
+                        <div className="nav-logo align-bottom d-inline-block">
+                            <NavLogo/>
+                        </div>{' '}
+                        <span className="nav-brand-title">Park Church</span>
+                    </Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navo" aria-controls="navo" aria-expanded="false" aria-label="Toggle navigation">
                         <svg width='30' height='30' viewBox='0 0 30 30'><path className="burger-tint" strokeMiterlimit='10' strokeLinecap='round' strokeWidth='2' d='M4 7h22M4 15h22M4 23h22'/></svg>
                     </button>

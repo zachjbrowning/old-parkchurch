@@ -1,6 +1,7 @@
 import React from 'react'
-import LandingPage from './landing/LandingPage'
+import Base from './Base'
 import ReactDom from 'react-dom'
-import css from '../src/css/general.css'
+import { BrowserRouter } from 'react-router-dom'
+import '../src/css/general.css'
 
-ReactDom.render(<LandingPage/>, document.getElementById('root'));
+ReactDom.render(<BrowserRouter><Base/></BrowserRouter>, document.getElementById('root'));

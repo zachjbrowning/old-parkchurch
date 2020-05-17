@@ -6,9 +6,27 @@ module.exports = {
     devServer: {
         historyApiFallback: true,
     },
+    optimization: {
+      runtimeChunk: {
+        name: 'manifest'
+      },
+      splitChunks: {
+        chunks: "all",
+        maxInitialRequests: Infinity,
+        minSize: 0,
+        cacheGroups: {
+          vendor: {
+            test: /[\\/]node_modules[\\/]/,
+            name: 'vendor',
+            chunks: 'initial',
+          }
+        }
+      }
+    },
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'index_bundle.js',
+      filename: "[name].js",
+      chunkFilename: "[id]-[chunkhash].js",
       publicPath: '/'
     },
     module: {

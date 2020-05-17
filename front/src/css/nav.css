@@ -8,9 +8,9 @@
     align-items: center;
 }
 .nav-logo {
-    width:60px;
+    width:51.7px;
     height:0%;
-    padding-bottom:60px;
+    padding-bottom:51.7px;
     position:relative;
 }
 #logo {
@@ -25,6 +25,7 @@
 .navbar-brand {
     display:flex;
     align-items: center;
+    padding:0;
 }
 .burger-tint {
     stroke:#7d9c7c;
