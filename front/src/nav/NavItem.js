@@ -19,10 +19,10 @@ export default class NavItem extends Component {
                     {this.props.dropdown.map((out, index) => <li key={index} className="nav-item">
                         <Switch>
                             <Route path={'/' + this.props.addr + '/' + out[1]} render={() => (
-                                <Link className='nav-link active' to={"/" + this.props.addr + "/" + out[1]}>{out[0]}</Link>
+                                <Link onClick={this.props.navigate} className='nav-link active' to={"/" + this.props.addr + "/" + out[1]}>{out[0]}</Link>
                             )}/>
                             <Route render={() => (
-                                <Link className='nav-link' to={"/" + this.props.addr + "/" + out[1]}>{out[0]}</Link>
+                                <Link onClick={this.props.navigate} className='nav-link' to={"/" + this.props.addr + "/" + out[1]}>{out[0]}</Link>
                             )}/>
                         </Switch>
 
@@ -32,10 +32,10 @@ export default class NavItem extends Component {
         } else {
             item = <Switch>
                     <Route path={'/' + this.props.addr} render={() => (
-                        <Link to={'/' + this.props.addr} className='nav-link active'>{this.props.name}</Link>
+                        <Link onClick={this.props.navigate} to={'/' + this.props.addr} className='nav-link active'>{this.props.name}</Link>
                     )}/>
                     <Route render={() => (
-                        <Link to={'/' + this.props.addr} className='nav-link'>{this.props.name}</Link>
+                        <Link onClick={this.props.navigate} to={'/' + this.props.addr} className='nav-link'>{this.props.name}</Link>
                     )}/>
                 
                 </Switch>
