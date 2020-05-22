@@ -1,4 +1,3 @@
 #! /bin/bash
-myrepo="biggus"
-./save.sh
+git checkout biggus
 git push
