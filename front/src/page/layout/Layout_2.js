@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 
 export default function Layout_2(props) {
     return (
-        <div className="content-frame" style={props.style}>
+        <div className="content-frame" style={'style' in props.section ? props.section['style'] : {}}>
             <div className="container">
                 {'header' in props.section ? <SubHeader header={props.section['header']}/> : ''}
                 <div className="block-2">

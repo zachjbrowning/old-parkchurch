@@ -18,7 +18,7 @@
                 "text"      : ["The most incredible human being I've ever met", "No really I'm not joking he's a hunk"]
             },
             "second"    : {
-                "img"   : ["usour/boog.jpg"]
+                "img"   : ["usour/boog.jpg", "Not jason mraz"]
             },
             "background-color"  : "#712370",
             "color"     : "white"

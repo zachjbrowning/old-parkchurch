@@ -13,7 +13,7 @@ export default function Page(props) {
     }
     
     return (
-        <div className="content">
+        <div className="content" style={'style' in props.info ? props.info['style'] : {}}>
             <Header title={props.info['title']}/>
             {sec}
         </div>

@@ -13,14 +13,17 @@ export default function Block(props) {
         )))
     } else if ('img' in props.block) {
         stuff = <div className="img-holder">
-                <img src={'../../public/' + props.block['img']}/>
+                <img className="img" src={'../../public/' + props.block['img'][0]}/>
+                <div className="img-text">
+                    {props.block['img'][1]}
+                </div>
             </div>
     }
     
     
     
     return (
-        <div className="block">
+        <div className="block" >
             {'header' in props.block ? <SubHeader header={props.block['header']}/> : ''}
             {stuff}
         </div>
