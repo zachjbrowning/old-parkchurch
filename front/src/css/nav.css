@@ -30,7 +30,7 @@
 .burger-tint {
     stroke:#7d9c7c;
 }
-.nav-item {
+.nav-item, .nav-link {
     font-weight:500;
 }
 .navbar-toggler:hover .burger-tint, button:focus {

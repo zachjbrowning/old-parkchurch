@@ -1,0 +1,28 @@
+{
+    "title"     : "Creative Commons",
+    "sections"  : [
+        {
+            "layout"    : 1,
+            "header"    : {
+                "color"     : "purple",
+                "text"      : "biggus dickus"
+            },
+            "first"      : {
+                "text"  : ["yoyoyowas poppin homy g yeah actually tho", "paragraph again", "lo and behold I am just typgin so much it's absolutely ridiculous bro like what the heck is really goingon here I just keep typing and typing and typing it's just like it never ever stops"]
+            },
+            "background-color"  : "white",
+            "color"     : "black"
+        },
+        {
+            "layout"    : 2,
+            "first"     : {
+                "text"      : ["The most incredible human being I've ever met", "No really I'm not joking he's a hunk"]
+            },
+            "second"    : {
+                "img"   : ["usour/boog.jpg"]
+            },
+            "background-color"  : "#712370",
+            "color"     : "white"
+        }
+    ]
+}

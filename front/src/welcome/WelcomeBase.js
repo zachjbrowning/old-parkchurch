@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import img from '../../public/tres.jpg'
 import '../css/welcome.css'
 
 export default function WelcomeBase() {
