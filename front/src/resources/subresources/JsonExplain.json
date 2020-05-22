@@ -1,0 +1,40 @@
+{
+    "title"     : "Json Explanations",
+    "sections"  : [
+        {
+            "layout"    : 1,
+            "header"    : {
+                "color"     : "purple",
+                "text"      : "What is json???"
+            },
+            "first"     : {
+                "text"  : ["JSON is a type of file that stores information that can easily be converted from a file to data in a program, and vice versa.", "It can take a little bit getting used to the syntax, but once understood, it's a very powerful way of storing data.", "The first step to understanding json files it understanding their components."]
+            }
+        },
+        {
+            "layout"    : 2,
+            "header"    : {
+                "color" : "white",
+                "text"  : "JSON components"
+            },
+            "background-color"  : "purple",
+            "color"             : "white",
+            "first"     : {
+                "header"    : {
+                    "text"  : "Dictionaries",
+                    "color" : "green"
+                },
+                "text"      : ["Dictionaries are unsurprisingly analogous to a dictionary in a way. Importantly though, it is an unordered dictionary. This means you should never think about dictionary items relative to their order of appearance.", "Back to the analogy. Each word in the dictionary is what's called a key. And every single word (or key) in the dictionary has it's accompanying definition, or as we'll call it, it's value. SO, a dictionary is essentially a book with a whole bunch of unordered keys and their corresponding values. We can find the values, by looking up the key."]
+            },
+            "second"    : {
+                "header"    : {
+                    "text"  : "Arrays",
+                    "color" : "green"
+                },
+                "text"      : ["An array is really just a fancy word for a list."]
+
+            }
+        }
+    ]
+    
+}

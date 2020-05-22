@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import Section from './Section'
+import PropTypes from 'prop-types'
 
 
 export default function Page(props) {
@@ -17,4 +18,8 @@ export default function Page(props) {
             {sec}
         </div>
     )
+}
+
+Page.propTypes = {
+    info: PropTypes.object
 }

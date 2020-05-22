@@ -9,7 +9,12 @@ const AsyncSW = Loadable({
         return <Loader/>
     }
 })
-
+const AsyncJSON = Loadable({
+    loader: () => import('./subresources/JsonExplain'),
+    loading() {
+        return <Loader/>
+    }
+})
 
 export default class ResourcesBase extends Component {
     render() {
@@ -17,6 +22,7 @@ export default class ResourcesBase extends Component {
             <div className="filler">
                 <Switch>
                     <Route path='/resources/story-web' component={AsyncSW}/>
+                    <Route path='/resources/json-explain' component={AsyncJSON}/>
                 </Switch>
             </div>
         )

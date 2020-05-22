@@ -1,6 +1,7 @@
 import React from 'react'
 import SubHeader from '../SubHeader'
 import Block from '../Block'
+import PropTypes from 'prop-types'
 
 export default function Layout_2(props) {
     return (
@@ -14,4 +15,9 @@ export default function Layout_2(props) {
             </div>
         </div>
     )
+}
+
+
+Layout_2.propTypes = {
+    section: PropTypes.object
 }

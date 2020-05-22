@@ -1,5 +1,6 @@
 import React from 'react'
 import SubHeader from './SubHeader'
+import PropTypes from 'prop-types'
 
 export default function Block(props) {
     let stuff;
@@ -24,4 +25,9 @@ export default function Block(props) {
             {stuff}
         </div>
     )
+}
+
+
+Block.propTypes = {
+    block: PropTypes.object
 }
