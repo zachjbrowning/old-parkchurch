@@ -1,8 +1,7 @@
 #! /bin/bash
-#! /bin/bash
 myrepo="biggus"
 git checkout $myrepo
-echo Enter a one or two word description of the commit \(seperated by inverted commas please\): 
+echo Enter a one word \(and one word only pls - you can use underscores \if you want \): 
 read varcommit
 git add --all
 git commit -m\"$varcommit\"
