@@ -2,6 +2,15 @@
 @import './footer.css';
 @import './nav.css';
 @import './pages.css';
+:root {
+    --purple:#712370;
+    --pink:#97027e;
+    --green:#7d9c7c;
+    --brown:#594E4A;
+    --light-green:#7d9c7ca9;
+}
+
+
 body {
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;

@@ -9,6 +9,7 @@
 .content-sub-header {
     font-weight:700;
     font-size:24px;
+    padding-bottom:10px;
 }
 .block > .content-sub-header {
     font-weight:600;
@@ -53,7 +54,9 @@
     padding-left:5px;
     padding-right:5px;
 }
-
+.block {
+    white-space: pre-wrap;
+}
 @media only screen and (max-width: 768px) {
     .block-2 > .block {
         width:100% !important;

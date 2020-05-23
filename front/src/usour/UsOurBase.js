@@ -37,7 +37,7 @@ const AsnycCommons = Loadable({
 export default class UsOurBase extends Component {
     render() {
         return (
-            <div>
+            <div className="second-base">
                 <Switch>
                     <Route path={'/us-our/common-tables'} component={AsyncTables}/>
                     <Route path={'/us-our/common-rule'} component={AsyncRule}/>

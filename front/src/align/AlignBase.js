@@ -25,7 +25,7 @@ const AsyncFormation = Loadable({
 export default class AlignBase extends Component {
     render() {
         return (
-            <div className="filler">
+            <div className="second-base">
                 <Switch>
                     <Route path='/align/sunday-worship' component={AsyncSW}/>
                     <Route path='/align/weekday-practice' component={AsyncWP}/>

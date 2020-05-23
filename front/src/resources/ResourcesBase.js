@@ -15,14 +15,22 @@ const AsyncJSON = Loadable({
         return <Loader/>
     }
 })
+const AsyncCSS = Loadable({
+    loader: () => import('./subresources/CssExplain'),
+    loading() {
+        return <Loader/>
+    }
+})
 
 export default class ResourcesBase extends Component {
     render() {
         return (
-            <div className="filler">
+            <div className="second-base">
                 <Switch>
                     <Route path='/resources/story-web' component={AsyncSW}/>
                     <Route path='/resources/json-explain' component={AsyncJSON}/>
+                    <Route path='/resources/css-explain' component={AsyncCSS}/>
+                    
                 </Switch>
             </div>
         )
