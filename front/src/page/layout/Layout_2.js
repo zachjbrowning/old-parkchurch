@@ -5,9 +5,9 @@ import PropTypes from 'prop-types'
 
 export default function Layout_2(props) {
     return (
-        <div className={"content-frame" + ('class ' in props.section ? props.section['class'] : '')} style={'style' in props.section ? props.section['style'] : {}}>
+        <div id={('id' in props.section ? props.section['id'] : '')} className={"content-frame " + ('class' in props.section ? props.section['class'] : '')} style={'style' in props.section ? props.section['style'] : {}}>
             <div className="container">
-                {'header' in props.section ? <SubHeader header={props.section['header']}/> : ''}
+                {'header-text' in props.section ? <SubHeader header={props.section['header-text']} style={props.section['header-style']}/> : ''}
                 <div className="block-2">
                     {'first' in props.section ? <Block block={props.section['first']}/> : ''}
                     {'second' in props.section ? <Block block={props.section['second']}/> : ''}

@@ -22,19 +22,17 @@ export default function Block(props) {
     } else if ('img' in props.block) {
         stuff = <div className="img-holder">
                 <img className="img" src={'../../public/' + props.block['img'][0]}/>
-                <div className="img-text" >
-                    {props.block['img'][1]}
-                </div>
+                {props.block['img'].length > 1 ? <div className="img-text" >{props.block['img'][1]}</div> : ''}
             </div>
     }
     
     let head;
-    if ('header' in props.block) {
-        head = <SubHeader header={props.block['header']}/>
+    if ('header-text' in props.block) {
+        head = <SubHeader header={props.block['header-text']} style={props.block['header-style']}/>
     }
     
     return (
-        <div className={"block" + ('class ' in props.block ? props.block['class'] : '')} style={'style' in props.block ? props.block['style'] : {}}>
+        <div className={"block " + ('class' in props.block ? props.block['class'] : '')} style={'style' in props.block ? props.block['style'] : {}}>
             {head}{stuff}
         </div>
     )

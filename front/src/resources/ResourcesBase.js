@@ -21,6 +21,12 @@ const AsyncCSS = Loadable({
         return <Loader/>
     }
 })
+const AsyncDOC = Loadable({
+    loader: () => import('./subresources/Documentation'),
+    loading() {
+        return <Loader/>
+    }
+})
 
 export default class ResourcesBase extends Component {
     render() {
@@ -30,6 +36,7 @@ export default class ResourcesBase extends Component {
                     <Route path='/resources/story-web' component={AsyncSW}/>
                     <Route path='/resources/json-explain' component={AsyncJSON}/>
                     <Route path='/resources/css-explain' component={AsyncCSS}/>
+                    <Route path='/resources/documentation' component={AsyncDOC}/>
                     
                 </Switch>
             </div>

@@ -9,7 +9,9 @@
     --brown:#594E4A;
     --light-green:#7d9c7ca9;
 }
-
+.second-base {
+    width:100%;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -51,8 +53,8 @@ main > div {
     display:flex;
     justify-content:center;
     align-items:center;
-    width:10vh;
-    height:100%;
+    width:100%;
+    height:100vh;
 
 }
 

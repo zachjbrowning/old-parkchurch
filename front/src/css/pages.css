@@ -11,7 +11,7 @@
     font-size:24px;
     padding-bottom:10px;
 }
-.block > .content-sub-header {
+.block  .content-sub-header {
     font-weight:600;
     font-size:22px;
 }
@@ -64,4 +64,24 @@
     .block-2 {
         flex-wrap: wrap;
     }
+}
+.white-purple {
+    background-color : white;
+}
+.white-purple  .content-sub-header {
+    color : var(--purple);
+}
+.white-purple  .block  .content-sub-header {
+    color : var(--pink);
+}
+.purple-white {
+    background-color : var(--purple);
+    color : white;
+}
+.green-white {
+    background-color : var(--green);
+    color:white;
+}
+.light-green-black {
+    background-color : var(--light-green)
 }

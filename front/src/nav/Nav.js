@@ -40,7 +40,7 @@ export default class Nav extends Component {
                                 <NavItem navigate={this.navigate} name="Welcome" addr="welcome"/>
                                 <NavItem navigate={this.navigate} name="Align" addr="align" dropdown={[['Sunday Worship','sunday-worship'],['Weekday Practice','weekday-practice'],['Formation','formation']]}/>
                                 <NavItem navigate={this.navigate} name="Us-Our" addr="us-our" dropdown={[['Common Tables', 'common-tables'],['Common Rule', 'common-rule'],['Common Feasts', 'common-feasts'],['Common Good','common-good'],['Creative Commons','creative-commons']]}/>
-                                <NavItem navigate={this.navigate} name="Resources" addr="resources" dropdown={[['Story Web', 'story-web'], ['JSON Explain','json-explain'], ['CSS Explain', 'css-explain']]}/>
+                                <NavItem navigate={this.navigate} name="Resources" addr="resources" dropdown={[['Story Web', 'story-web'], ['JSON Explain','json-explain'], ['CSS Explain', 'css-explain'], ['Documentation', 'documentation']]}/>
                             </ul>
                         </div>
                     </div>
