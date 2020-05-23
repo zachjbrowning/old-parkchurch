@@ -2,6 +2,7 @@
 @import './footer.css';
 @import './nav.css';
 @import './pages.css';
+@import './documentation.css';
 :root {
     --purple:#712370;
     --pink:#97027e;

@@ -10,9 +10,7 @@
         {
             "layout"    : 1,
             "header-text"    : ["What is json???"],
-            "header-style"     : {
-                    "color" : "purple"
-            },
+            "class"     : "white-purple",
             "first"     : {
                 "text"  : ["JSON is a type of file that stores information that can easily be converted from a file to data in a program, and vice versa.\n\nIt can take a little bit getting used to the syntax, but once understood, it's a very powerful way of storing data.\n\nThe first step to understanding json files it understanding their components."]
             }
@@ -20,13 +18,7 @@
         {
             "layout"    : 2,
             "header-text"    : ["JSON components"],
-            "header-style" : {
-                    "color" :"white"
-            },
-            "style"     : {
-                "backgroundColor"   : "purple",
-                "color"             : "white"
-            },
+            "class"     : "purple-white",
             "first"     : {
                 "header-text"    : ["Dictionaries"],
                 "text"      : ["Dictionaries are unsurprisingly analogous to a dictionary in a way. Importantly though, it is an unordered dictionary. This means you should never think about dictionary items relative to their order of appearance.\n\nBack to the analogy. Each word in the English dictionary can be called a key. And every single word (or key) in the dictionary has it's accompanying definition, or as we'll call it, it's value. SO, a dictionary is essentially a book with a whole bunch of unordered keys and their corresponding values. We can find the values, by looking up the key."]
@@ -40,10 +32,7 @@
         {
             "layout"    : 2,
             "header-text"    : ["SYNTAX BABBYYYY"],
-            "style"     : {
-                "backgroundColor" :"purple",
-                "color" :"white"
-            },
+            "class"     : "purple-white",
             "first"     : {
                 "text"  : ["Dictionaries are signified by curly braces. if you see {} - that would be a dictionary. (An empty one, but a dictionary nonetheless.\n\nAs previously mentioned, dictionaries are made up of key - value pairs. In a dictionary, a key MUST be a string, and therefore encased in double quotation marks. The value is then seperated by a colon, like:\n\n\"KEY\" : VALUE\n\nA dictionary is literally just made up of a whole bunch of those, comma seperated. Remeber the value can be any type.\n\n{\n\t\"list\" : [1,2,3],\n\t\"dict\" : {},\n\t\"int\" : 3\n}"]
             },
@@ -53,14 +42,9 @@
         },
         {
             "layout"    : 1,
-            "style"     : {
-                "backgroundColor"   : "white"
-            },
+            "class"     : "white-purple",
             "first"     : {
                 "header-text"    : ["JSON, TICKKKKK!"],
-                "header-style"   : {
-                    "color" : "purple"
-                },
                 "text"  : ["SO hopefully that's enough to get you on track in regards to JSON. We are going to hopefully by representing each page as a JSON file, that my lil framework will turn into a rovery webpage!\n\nOne more quick note - Remember how both our different types, dictionaries and arrays, are comma seperated? JSON gets very angry then rolls over and dies if you have a comma after the last element (i.e. there are no more elements in the array/dict). So remember not to do this. It is also almost always the error that is causing the webpage not to load."]
             }
         }
