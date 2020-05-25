@@ -35,7 +35,7 @@ export default class Base extends Component {
             <div>
                 <Nav/>
                 <main>
-                    <Route path='/welcome' component={AsyncWelcome}/>
+                    <Route exact path='/' component={AsyncWelcome}/>
                     <Route path='/align' component={AsyncAlign}/>
                     <Route path='/us-our' component={AsyncUsOur}/>
                     <Route path='/resources' component={AsyncResources}/>

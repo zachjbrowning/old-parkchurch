@@ -8,7 +8,7 @@ export default class NavItem extends Component {
             item = <div className="dropdown">
                 <Switch>
                     <Route path={'/' + this.props.addr} render={() => (
-                        <div className='nav-link active'>{this.props.name}</div>
+                        <div className={'nav-link ' + (this.props.addr === '' && window.location.pathname !== '/' ? '' : 'active')}>{this.props.name}</div>
                     )}/>
                     <Route render={() => (
                         <div className='nav-link'>{this.props.name}</div>
@@ -32,7 +32,7 @@ export default class NavItem extends Component {
         } else {
             item = <Switch>
                     <Route path={'/' + this.props.addr} render={() => (
-                        <Link onClick={this.props.navigate} to={'/' + this.props.addr} className='nav-link active'>{this.props.name}</Link>
+                        <Link onClick={this.props.navigate} to={'/' + this.props.addr} className={'nav-link ' + (this.props.addr === '' && window.location.pathname !== '/' ? '' : 'active')}>{this.props.name}</Link>
                     )}/>
                     <Route render={() => (
                         <Link onClick={this.props.navigate} to={'/' + this.props.addr} className='nav-link'>{this.props.name}</Link>

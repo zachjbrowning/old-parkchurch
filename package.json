@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
-    "serve": "node server/index.js"
+    "start": "node server/index.js"
   },
   "author": "zachjbrowning",
   "license": "ISC",

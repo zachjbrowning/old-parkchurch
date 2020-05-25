@@ -26,7 +26,7 @@ export default class Nav extends Component {
             <header>
                 <nav id="navbar" className="fixed-top navbar nav-holder navbar-expand-md navbar-light">
                     <div className="container">
-                        <Link to="/welcome" onClick={() => this.navigate()} className="mr-auto navbar-brand">
+                        <Link to="/" onClick={() => this.navigate()} className="mr-auto navbar-brand">
                             <div className="nav-logo align-bottom d-inline-block">
                                 <NavLogo/>
                             </div>{' '}
@@ -37,7 +37,7 @@ export default class Nav extends Component {
                         </button>
                         <div className="collapse navbar-collapse" id="navo">
                             <ul className="nav navbar-nav ml-auto">
-                                <NavItem navigate={this.navigate} name="Welcome" addr="welcome"/>
+                                <NavItem navigate={this.navigate} name="Welcome" addr=""/>
                                 <NavItem navigate={this.navigate} name="Align" addr="align" dropdown={[['Sunday Worship','sunday-worship'],['Weekday Practice','weekday-practice'],['Formation','formation']]}/>
                                 <NavItem navigate={this.navigate} name="Us-Our" addr="us-our" dropdown={[['Common Tables', 'common-tables'],['Common Rule', 'common-rule'],['Common Feasts', 'common-feasts'],['Common Good','common-good'],['Creative Commons','creative-commons']]}/>
                                 <NavItem navigate={this.navigate} name="Resources" addr="resources" dropdown={[['Story Web', 'story-web'], ['JSON Explain','json-explain'], ['CSS Explain', 'css-explain'], ['Documentation', 'documentation']]}/>
